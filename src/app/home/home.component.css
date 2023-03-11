@@ -22,17 +22,17 @@
 }
 
 #item1{
-    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.41.jpg");
+    background: url("./assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.41.jpg");
     background-size: cover;
     transition: 1s;
 }
 #item2{
-    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.51.jpg");
+    background: url("./assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.51.jpg");
     background-size: cover;
     background-position: 100% 100%;
 }
 #item3{
-    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.18.02.jpg");
+    background: url("./assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.18.02.jpg");
     background-size: cover;
 }
 
