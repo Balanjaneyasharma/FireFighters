@@ -1,0 +1,28 @@
+.data-row{
+    display: grid;
+    grid-template-columns: 3fr 1.4fr 1.4fr 1.4fr 1.4fr 3fr 1.7fr 1.4fr 1.4fr 1.4fr;
+    border-bottom: 1px solid black;
+}
+.important{
+    color:red;
+}
+.data-row > div{
+    border-right: 1px solid black;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px 0px;
+}
+.data-row > div:last-child{
+    border: none;
+}
+.data-row > div span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.page-table-button{
+    border : 0.6px solid black;
+    color:red;
+    cursor: pointer;
+    background-color: transparent;
+}

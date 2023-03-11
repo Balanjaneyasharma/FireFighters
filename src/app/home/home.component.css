@@ -1,0 +1,68 @@
+.page-images{
+    overflow: hidden;
+    margin-top: 10px;
+    height: 93.5vh;
+    width: 100vw;   
+}
+.page-images-container{
+    width: 300vw;
+    /* gap: 12px; */
+    height: 90%;
+    display: flex;
+}
+.page-images-container input[type = 'radio']{
+    display: none;
+}
+.item{
+    display: inline-block;
+    height: 91vh;
+    width: 100vw  ;
+    border-radius: 10px;
+    background-color:cornflowerblue;
+}
+
+#item1{
+    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.41.jpg");
+    background-size: cover;
+    transition: 1s;
+}
+#item2{
+    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.17.51.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+}
+#item3{
+    background: url("/assets/Images/WhatsApp\ Image\ 2023-02-05\ at\ 15.18.02.jpg");
+    background-size: cover;
+}
+
+.radio-labels{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.radio-label{
+    border: 2px solid red;
+    border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   transition: 2s;
+}
+.radio-label:hover{
+    background: red;
+
+}
+.radio-label:not(:last-child){
+    margin-right: 30px;
+    transition: 2s;
+}
+#radio1:checked ~ #item1{
+    margin-left: -0px;
+}
+#radio2:checked ~ #item1{
+    /* margin-left: -100vw; */
+    margin-left: calc(-100vw);
+}
+#radio3:checked ~ #item1{
+    margin-left: calc(-200vw);
+}

@@ -1,0 +1,27 @@
+.page-head{
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 5px;
+ }
+
+.page-head-title{
+    margin: 0px;
+    width: 10%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.page-head-title span{
+    color: red;
+}
+.page-nav-list{
+    list-style: none;
+    display: flex;
+}
+.page-item-link{
+    text-decoration: none;
+    color: black;
+    padding: 0px 30px;
+    font-weight: 600;
+}

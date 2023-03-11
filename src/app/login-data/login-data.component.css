@@ -1,0 +1,194 @@
+.login-data-heading{
+    padding-left: 15px;
+}
+.login-data-heading span{
+    color: red;
+}
+.page-login-data{
+    display: grid;
+    margin: 10px;
+    border: 1px solid black;
+}
+.important{
+    color:red;
+}
+.data-row{
+    display: grid;
+    grid-template-columns: 3fr 1.4fr 1.4fr 1.4fr 1.4fr 3fr 1.7fr 1.4fr 1.4fr 1.4fr;
+    border-bottom: 1px solid black;
+}
+.data-row > div{
+    border-right: 1px solid black;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px 0px;
+}
+.data-row > div:last-child{
+    border: none;
+}
+.data-row > div span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.data-row:last-child{
+    border:none;
+}
+.data-column-heading{
+    display: inline-block;
+    font-weight: 1000;
+    margin: 2px 0px;
+    text-transform: capitalize;
+}
+.table-page{
+    justify-content: space-around;
+}
+
+/* .page-table-button{
+    border : 0.6px solid black;
+    background-color: transparent;
+} */
+.page-registration-title{
+    margin: 40px auto;
+    width: 500px;
+}
+.page-registration-title h2 span{
+    color: red;
+}
+.login{
+    position: relative;
+    /* height : 420px; */
+    padding-bottom: 40px;
+    width: 540px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto;
+    align-items: center;
+    padding-top: 40px;
+    box-shadow: 1px 1px 15px 4px rgba(0,0,0,0.6);
+}
+.logo{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    background-color: red;
+    top: -70px;
+    border-radius: 50%;
+    border-color: black;
+    box-shadow: 1px 1px 15px 4px rgba(0,0,0,0.6);
+
+    
+}
+input:nth-of-type(1){
+    margin-top: 30px;
+}
+.login input{
+    height: 40px;
+    width:80%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+input::placeholder{
+    color: red;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.form-button{
+    padding: 10px 50px;
+    border-radius: 2px;
+    border: none;
+    margin-top: 10px;
+    font-size: medium;
+    font: bold;
+    background-color: azure;
+}
+@media screen and (max-width : 767px){
+    .page-head{
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+    .page-nav-list{
+        display: none;
+    }
+
+}
+@media screen and (max-width : 1200px){
+    
+    .page-login-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+    .data-row{
+        width: 80vw;
+        display: flex;
+        border: 2px solid #EAF6F6;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 5px;
+        text-align: right;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .data-row:last-child{
+        border: 2px solid #EAF6F6;
+    }
+    .data-row > div{
+        border: none;
+        text-align: justify;
+    }
+    .data-row > div span{
+        font-weight: 400;
+    }
+   .header{
+       display: none;
+   }
+   .data-row div{
+       font-weight: 600;
+   }
+    .data-row div:first-child:before{
+        content : 'Address Line :    ';
+    }
+    .data-row div:nth-child(2):before{
+        content: 'Pincode : ';
+
+    }
+    .data-row div:nth-child(3):before{
+        content : 'District : ';
+
+    }
+    .data-row div:nth-child(4):before{
+        content : 'State : ';
+        
+    }
+    .data-row div:nth-child(5):before{
+        content:  'Device-Id : ';
+        
+    }
+    .data-row div:nth-child(6):before{
+        content : 'Time : ';
+        
+    }
+    .data-row div:nth-child(7):before{
+        content : 'Status : ';
+    }
+    .data-row div:nth-child(8):before{
+        content : 'City : ';
+    }
+    .data-row div:nth-child(9):before{
+        content : 'Report : ';
+        
+    }
+    .data-row div:last-child:before{
+        content : 'Action : ';
+    }
+    
+}

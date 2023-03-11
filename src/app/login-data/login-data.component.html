@@ -1,0 +1,85 @@
+<h1 class="login-data-heading"> <span>Status</span> Report</h1>
+    <section class="page-login-data">
+        <div class="data-row header">
+            <div class="address-line">
+                <h4 class="data-column-heading">Address-Line</h4>
+            </div>
+            <div class="pincode">
+                <h4 class="data-column-heading">Pincode</h4>
+            </div>
+            <div class="district">
+                <h4 class="data-column-heading">district</h4>
+            </div>
+            <div class="state">
+                <h4 class="data-column-heading">state</h4>
+            </div>
+            <div class="device-id">
+                <h4 class="data-column-heading">device-id</h4>
+            </div>
+            <div class="time">
+                <h4 class="data-column-heading">time</h4>
+            </div>
+            <div class="status">
+                <h4 class="data-column-heading">status</h4>
+            </div>
+            <div class="city">
+                <h4 class="data-column-heading">city</h4>
+            </div>
+            <div class="report">
+                <h4 class="data-column-heading">report</h4>
+            </div>
+            <div class="action">
+                <h4 class="data-column-heading">action</h4>
+            </div>
+
+        </div>
+
+        <!-- <div class="data-row" *ngFor="let d of userData">
+            <div>
+                <span>{{d.address_line}}</span>
+            </div>
+            <div>
+                <span>{{d.pincode}}</span>
+            </div>
+            <div>
+                <span>{{d.district}}</span>
+            </div>
+            <div>
+                <span>
+                    {{d.state}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{d.device_id}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{d.time}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{d.status}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{d.city}}
+                </span>
+            </div>
+            <div>
+                <span>
+                    {{d.report}}
+                </span>
+            </div>
+            <div>
+                <button class="page-table-button"></button>
+            </div>
+        </div> -->
+
+        <app-data-row [data]="d" *ngFor="let d of userData  let last = last " [ngClass]="{'important' : d.status==='fire','last-child': last}" ></app-data-row>
+
+
+    </section>
